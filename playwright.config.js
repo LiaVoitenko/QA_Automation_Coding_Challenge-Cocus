@@ -9,9 +9,18 @@ const config = {
     navigationTimeout: 60000, // Maximum time for navigation actions (e.g., page.goto) in milliseconds (60 seconds)
     use: {
         baseURL: 'https://www.jacamo.co.uk',
-        headless: true, // Set to false if you want to see the browser during tests
+        headless: false,
+        ignoreHTTPSErrors: true,
+        launchOptions: {
+            args: [
+                '--disable-extensions-http-throttling',
+                '--incognito',
+                '--disable-background-timer-throttling',
+                '--disable-popup-blocking',
+            ],
+        },
         screenshot: 'only-on-failure', // Capture screenshots only when a test fails
-        video: 'on', // Record video and retain it only when a test fails
+        video: 'only-on-failure', // Record video and retain it only when a test fails
         trace: 'on-first-retry', // Capture a trace when the test is retried for the first time
     },
     // retries: 1, // Retry failing tests once before considering them as failed
