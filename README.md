@@ -31,8 +31,8 @@ Ensure that you have the following installed on your machine:
 
 - ## Running the Tests
 
-**To execute all tests, runs**:`npx playwright test`
-**To run a specific test file or test case**:`npx playwright test tests/<test-file-name>.spec.js`
+- **To execute all tests, runs**:`npx playwright test`
+- **To run a specific test file or test case**:`npx playwright test tests/<test-file-name>.spec.js`
 
 - ## Viewing Test Reports
   
@@ -44,9 +44,9 @@ Test execution reports are generated and can be found in the reports directory. 
 
 - ## Project Structure
   
-tests/: Contains all the test files organized by feature.
-pageObject/: Contains Page Object Models for the various pages of the website.
-utils/: Utility functions and helper scripts.
-selectors/: Stores all the CSS selectors used across the tests.
+- tests/: Contains all the test files organized by feature.
+- pageObject/: Contains Page Object Models for the various pages of the website.
+- utils/: Utility functions and helper scripts.
+- selectors/: Stores all the CSS selectors used across the tests.
 
 
